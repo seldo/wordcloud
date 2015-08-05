@@ -1,7 +1,7 @@
 var csv = require('csv-parser')
 var fs = require('fs')
  
-fs.createReadStream('keywords.csv')
+fs.createReadStream('modified_keywords.csv')
   .pipe(csv())
   .on('data', function(data) {
 	var out = ''
